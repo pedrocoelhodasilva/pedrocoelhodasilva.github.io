@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-brand">MySite</div>
+  <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main style="padding: 1rem;">
+    <h1>Projects</h1>
+    <p>Here are some of the things I’ve worked on. More will be added/disclosed as the site grows.</p>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h2>Family Tree</h2>
+            <p>I am building a family tree using Gramps. I will responsibly disclose information when the time comes.</p>
+            <a href="#" class="project-link">View Project? Not quite yet.</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Crypto Thesis</h2>
+            <p>I am writing a thesis on e-voting, PQC and HE.</p>
+            <a href="#" class="project-link">View Project? Not quite yet.</a>
+        </div>
+
+    </div>
+</main>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.nav-menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

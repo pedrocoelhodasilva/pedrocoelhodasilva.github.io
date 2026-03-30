@@ -65,3 +65,40 @@
     display: block;
   }
 }
+
+/* Projects layout */
+.projects-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Cards */
+.project-card {
+  background: #333;
+  padding: 1rem;
+  border-radius: 6px;
+  color: white;
+}
+
+.project-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive grid */
+@media (min-width: 700px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
