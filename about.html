@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Personal Summary</h1>
-    <p>Experienced professional with a background in Mathematics and Cybersecurity, with around 15 years of professional experience and more than a decade of expertise in Cybersecurity, including cryptography, vulnerability management, incident response, IAM/PAM, penetration testing and security audits, with a proven track record in industries such as finance, energy and telco.
-
-Passionate about exploring the intersection of information security and mathematics, particularly cryptography, and leveraging diverse perspectives to strengthen cybersecurity strategies.
-
-Hobbyist exploring historical research, particularly genealogy and local history.
-
+<nav class="navbar">
+  <div class="nav-brand">MySite</div>
+  <button class="nav-toggle" aria-label="toggle navigation">
+    ☰
+  </button>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <!-- Future pages you’ll likely add -->
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+    <h1>Short Bio</h1>
+    <p>Experienced professional with a background in Mathematics and Cybersecurity, with around 15 years of professional experience and more than a decade of expertise in Cybersecurity, including cryptography, vulnerability management, incident response, IAM/PAM, penetration testing and security audits, with a proven track record in industries such as finance, energy and telco.<br>
+Passionate about exploring the intersection of Information Security and Mathematics, particularly state-of-the-art Cryptography (e.g. PQC, HE), and leveraging diverse perspectives to strengthen Cybersecurity strategies.<br>
+Hobbyist exploring historical research, particularly Genealogy and Local History.<br>
 Feel free to reach out for more details on any of the above.</p>
     <p><a href="index.html">Back to Home</a></p>
+    <script>
+            const toggle = document.querySelector('.nav-toggle');
+            const menu = document.querySelector('.nav-menu');
+
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+    </script>
 </body>
 </html>
