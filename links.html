@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-brand">MySite</div>
+  <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="links.html">Links</a></li>
+  </ul>
+</nav>
+
+<main style="padding: 1rem;">
+    <h1>Links</h1>
+    <p>A curated collection of things I find useful, inspiring and/or interesting.</p>
+
+    <section class="link-section">
+        <h2>Crypto</h2>
+        <ul>
+            <li><a href="https://eprint.iacr.org">ePrint</a></li>
+	    <li><a href="https://redrocket.club/posts/kyber">Kyber (oldie but goldie)</a></li>
+        </ul>
+    </section>
+
+    <section class="link-section">
+        <h2>Genea/History</h2>
+        <ul>
+            <li><a href="https://alfarrabiosdebraga.blogspot.com">Alfarrábios de Braga e seu termo (In Memoriam)</a></li>
+            <li><a href="https://origenshc.blogspot.com">Heróis do Homem e Cávado (Salve)</a></li>
+            <li><a href="https://pesquisa.adb.uminho.pt">ADB</a></li>
+        </ul>
+    </section>
+
+    <section class="link-section">
+        <h2>InfoSec</h2>
+        <ul>
+            <li><a href="https://hackforums.net">Hack Forums (sdds)</a></li>
+        </ul>
+    </section>
+
+    <section class="link-section">
+        <h2>Math/Teaching</h2>
+        <ul>
+            <li><a href="https://pedronoia.pt">Nóia</a></li>
+            <li><a href="https://mat.absolutamente.net/wp">Mat Absolutamente</a></li>
+        </ul>
+    </section>
+
+    <section class="link-section">
+        <h2>Miscellaneous</h2>
+        <ul>
+            <li><a href="https://farricoco.blogspot.com">Farricoco (3 Séries) (In Memoriam)</a></li>
+        </ul>
+    </section>
+
+</main>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.nav-menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

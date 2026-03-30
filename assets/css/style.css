@@ -102,3 +102,30 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.link-section {
+  margin-bottom: 2rem;
+}
+
+.link-section h2 {
+  margin-bottom: 0.5rem;
+  color: #4da3ff;
+}
+
+.link-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.link-section li {
+  margin-bottom: 0.3rem;
+}
+
+.link-section a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.link-section a:hover {
+  text-decoration: underline;
+}
