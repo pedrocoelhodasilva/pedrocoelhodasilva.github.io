@@ -129,3 +129,31 @@
 .link-section a:hover {
   text-decoration: underline;
 }
+
+.post-list {
+  margin-top: 2rem;
+}
+
+.post-item {
+  margin-bottom: 2rem;
+}
+
+.post-item h2 {
+  margin-bottom: 0.2rem;
+}
+
+.post-item time {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.post-item a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.post-item a:hover {
+  text-decoration: underline;
+}

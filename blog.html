@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-brand">MySite</div>
+  <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="links.html">Links</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+  </ul>
+</nav>
+
+<main style="padding: 1rem;">
+    <h1>Blog</h1>
+    <p>Greetingz: the french underground
+
+Waiting for script kiddies to piss off................
+The force is with those who read the source....
+    (d'aprés @hackerschoice)
+    </p>
+
+    <section class="post-list">
+
+        <article class="post-item">
+            <h2><a href="posts/first-post.html">Hello world</a></h2>
+            <time>March 2026</time>
+            <p>Primeiro post do blogue</p>
+        </article>
+
+        <!-- New posts above this line -->
+        
+    </section>
+</main>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.nav-menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
