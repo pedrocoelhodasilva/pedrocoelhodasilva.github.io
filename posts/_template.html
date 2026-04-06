@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><!-- POST TITLE --></title>
+
+    <!-- Set the publication date ONCE per post -->
+    <meta name="published" content="YYYY-MM-DD">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-brand">MySite</div>
+  <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+  <ul class="nav-menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+    <li><a href="../links.html">Links</a></li>
+    <li><a href="../blog.html">Blog</a></li>
+  </ul>
+</nav>
+
+<main style="padding: 1rem; max-width: 700px; margin: auto;">
+
+    <h1><!-- POST TITLE --></h1>
+
+    <!-- Automatic date output -->
+    <p id="post-dates" style="color:#777; font-size:0.9rem;"></p>
+
+    <script>
+      const published = new Date(
+        document.querySelector('meta[name="published"]').content
+      );
+
+      const updated = new Date(document.lastModified);
+
+      const fmt = d => d.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+
+      let text = `Published on ${fmt(published)}`;
+
+      if (updated - published > 24 * 60 * 60 * 1000) {
+        text += ` • Last updated ${fmt(updated)}`;
+      }
+
+      document.getElementById("post-dates").textContent = text;
+    </script>
+
+    <!-- POST CONTENT GOES HERE -->
+    <p><!-- Write content here --></p>
+
+    <p><a href="../blog.html">← Back to Blog</a></p>
+</main>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.nav-menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
